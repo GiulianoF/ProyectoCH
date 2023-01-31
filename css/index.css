@@ -5,6 +5,7 @@
   box-sizing: border-box;
   text-decoration: none;
   list-style: none;
+
 }
 
 
@@ -43,7 +44,6 @@ body {
   align-items: center;
 }
 
-
 .nav-ul {
   display: flex;
   padding: 10px;
@@ -70,11 +70,13 @@ a:focus {
 }
 
 .nav-ul_li-a:hover {
+  transform:translateY(-2px);
   transition: all 0.3s;
   color: #ff8000;
 }
 
 .slider {
+  position: relative;
   max-width: 100%;
   height: 700px;
   margin: 50px auto 0;
@@ -130,20 +132,22 @@ a:focus {
     margin-left: -300%;
   }
 }
-
 h1 {
   font-size: x-large;
 }
 
+.contenido{
+  background-color: aqua;
+}
+
 .presentacion {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+  justify-content: flex-start;
+  line-height: 1.5;
   padding: 20px;
-  margin: 30px auto;
-  font-size: 24px;
-  width: 80%;
+  font-size: 1.6rem;
+  max-width: 80%;
+  margin: 20px;
 }
 
 .services {
@@ -151,6 +155,8 @@ h1 {
   margin-top: 50px;
   align-items: center;
   justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 .service-box {
@@ -163,6 +169,7 @@ h1 {
   height: 130px;
   background-color: #ff8000;
   transition: box-shadow .3s;
+
 }
 
 .service-box:hover {
@@ -178,9 +185,11 @@ h1 {
 }
 
 .container-himage_index {
-  width: auto;
+  display: flex;
+  max-width: 100%;
   margin-top: 50px;
   align-items: center;
+  justify-content: center;
   height: 400px;
   overflow: hidden;
   position: relative;
@@ -189,7 +198,7 @@ h1 {
 
 .text-himage_contacto {
   width: auto;
-  font-size: 50px;
+  font-size: 3rem;
   color: #fff;
   position: absolute;
   transform: translate(-50%, -50%);
@@ -294,6 +303,51 @@ footer {
   letter-spacing: 2px;
 }
 
+
+@media (max-width: 768px){
+.img{
+  max-width: 100%;
+}
+
+.slider{
+  height: auto;
+}
+.container-himage_index {
+  height: auto;
+}
+
+.contenido{
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+}
+
+.presentacion { 
+  grid-area: 1 / 1 / 2 / 2; 
+}
+.services { 
+  align-self: center;
+  grid-area: 1 / 2 / 2 / 3; 
+}
+
+
+.service-box{
+  width: min-content;
+  height: auto;
+  padding: 5px;
+}
+
+.box-content{
+justify-content: space-around;
+align-items: center;
+}
+
+.box-content p{
+  display: none;
+}
+
+}
 
 
 /*---------------------------------------------------------------------- CONTACTO--------------------------------------------------------------------------------- */
