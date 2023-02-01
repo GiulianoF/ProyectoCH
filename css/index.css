@@ -1,11 +1,10 @@
 * {
   padding: 0;
   margin: 0;
-  font-family: 'Lora', serif;
+  font-family: 'Noto Sans', sans-serif;
   box-sizing: border-box;
   text-decoration: none;
   list-style: none;
-
 }
 
 
@@ -16,6 +15,31 @@ body {
   background-color: #fff;
 }
 
+.navbar.navbar-expand-lg{
+font-size: 0.8rem;
+}
+
+.collapse.navbar-collapse{
+  justify-content: flex-end;
+}
+
+.navbar-nav{
+  align-items: center;
+}
+
+.navbar.navbar-expand-lg{
+  padding: 0;
+}
+
+.nav-link.active{
+  transition: all .2s linear;
+}
+
+.nav-link.active:hover{
+  color:#ff8000 !important;
+}
+
+/* 
 .header {
   min-width: 100%;
   z-index: 1;
@@ -73,13 +97,13 @@ a:focus {
   transform:translateY(-2px);
   transition: all 0.3s;
   color: #ff8000;
-}
+} */
 
 .slider {
   position: relative;
   max-width: 100%;
-  height: 700px;
-  margin: 50px auto 0;
+  height: 86vh;
+  margin:auto;
   overflow: hidden;
 }
 
@@ -132,27 +156,27 @@ a:focus {
     margin-left: -300%;
   }
 }
-h1 {
-  font-size: x-large;
-}
 
-.contenido{
-  background-color: aqua;
-}
-
-.presentacion {
+.container-presentacion {
   display: flex;
+  background-color: #44484a;
   justify-content: flex-start;
-  line-height: 1.5;
-  padding: 20px;
-  font-size: 1.6rem;
-  max-width: 80%;
-  margin: 20px;
+  padding: 40px;
+}
+
+.text-presentacion{
+color: #fff;
+margin: auto;
+text-align: center;
+}
+
+.span-presentacion{
+  color:#487ab9;
 }
 
 .services {
   display: flex;
-  margin-top: 50px;
+  margin:80px 0;
   align-items: center;
   justify-content: space-evenly;
   flex-wrap: wrap;
@@ -163,87 +187,72 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 9px;
+  border-radius: 10px;
   box-shadow: 1px 1px 1px .5px;
   width: 300px;
-  height: 130px;
+  height: 120px;
   background-color: #ff8000;
   transition: box-shadow .3s;
+}
 
+.service-box a{
+  text-decoration: none;
 }
 
 .service-box:hover {
   box-shadow: 2px 2px 10px #000;
 }
 
-.box-content {
+.box-content{
   color: #fff;
   width: 260px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  align-items: center;
+  text-decoration: none;
 }
 
-.container-himage_index {
+.container-himg {
+  background-color: bisque;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/Imagenes/himg.png");
   display: flex;
-  max-width: 100%;
-  margin-top: 50px;
+  flex-direction: column;
+  height: 50vh;
+  align-self: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
   align-items: center;
   justify-content: center;
-  height: 400px;
-  overflow: hidden;
-  position: relative;
 }
 
-
-.text-himage_contacto {
-  width: auto;
-  font-size: 3rem;
-  color: #fff;
-  position: absolute;
-  transform: translate(-50%, -50%);
-  top: 50%;
-  left: 50%;
+.text-himg{
+  font-size: 1.6rem;
   text-align: center;
-  justify-content: center;
-  text-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+  color: #fff;
 }
 
-.img-separador2 {
-  display: flex;
-  width: 100%;
+.container-contacto {
+display: flex;
+height: auto;
+padding: 20px;
+margin: 0 20px;
+align-items: center;
 }
 
-.container-mid {
-  margin-top: 50px;
-  margin-bottom: 50px;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(3);
-  grid-row-gap: 10px;
+.container-text_row h2{
+color:#000;
+font-weight:bold;
+line-height: 1.4;
 }
 
-.container-row1 {
-  margin-left: 100px;
-  font-size: 60px;
-  margin-bottom: 10px;
-}
+.container-text_row p{
 
-.container-row2 {
-  margin-left: 100px;
 }
-
-.container-row3 {
-  margin-left: 100px;
-  padding: 20px 0 0 0;
-}
-
-.container-col {
-  display: flex;
+.container-button{
   justify-content: center;
   align-items: center;
-  grid-row: 1 / 4;
-  grid-column: 2 / 3;
 }
 
 .grid-button {
@@ -305,6 +314,7 @@ footer {
 
 
 @media (max-width: 768px){
+
 .img{
   max-width: 100%;
 }
@@ -315,22 +325,6 @@ footer {
 .container-himage_index {
   height: auto;
 }
-
-.contenido{
-  display: grid;
-  width: 100%;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 1fr;
-}
-
-.presentacion { 
-  grid-area: 1 / 1 / 2 / 2; 
-}
-.services { 
-  align-self: center;
-  grid-area: 1 / 2 / 2 / 3; 
-}
-
 
 .service-box{
   width: min-content;
@@ -345,6 +339,13 @@ align-items: center;
 
 .box-content p{
   display: none;
+}
+.container-mid{
+  max-width: 100%;
+  justify-content: center;
+  display: flex;
+  flex-direction: column
+  ;
 }
 
 }

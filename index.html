@@ -21,16 +21,47 @@
     <link rel="icon" type="image/png" sizes="96x96" href="Imagenes/favicons/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="Imagenes/favicons/favicon-16x16.png">
     <link rel="manifest" href="Imagenes/favicons/manifest.json">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="Imagenes/favicons//ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
-    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
     <header>
-        <div class="header">
+        <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-logo" href="index.html">
+            <img src="Imagenes/Logo/GAEV LOGO chico.png" alt="logo">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" href="Nosotros.html">Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active"  href="servicios.html">Servicios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active"  href="proyectos.html">Proyectos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active"  href="contacto.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+        <!-- <div class="header">
             <div class="header-left">
                 <a href="index.html">
                     <img src="Imagenes/Logo/GAEV LOGO chico.png" alt="logo">
@@ -55,10 +86,9 @@
                     </ul>
                 </nav>
             </div>
-        </div>
-
-
-        <!-- <div id="carousel-container" class="carousel slide carousel-fade">
+        </div> -->
+    
+    <!-- <div id="carousel-container" class="carousel slide carousel-fade">
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <img src="Imagenes/Slider/slider 1.jpg" class="d-block w-100" alt="...">
@@ -82,125 +112,123 @@
               <span class="visually-hidden">Next</span>
             </button>
           </div> -->
-            <div class="slider">
-                <ul>
-                    <li>
-                        <img src="Imagenes/Slider/slider 1.jpg" alt="">
-                    </li>
-                    <li>
-                        <img src="Imagenes/Slider/slider 2.jpg" alt="">
-                    </li>
-                    <li>
-                        <img src="Imagenes/Slider/slider 3.jpg" alt="">
-                    </li>
-                    <li>
-                        <img src="Imagenes/Slider/slider 4.jpg" alt="">
-                    </li>
-                </ul>
+    <div class="slider">
+        <ul>
+            <li>
+                <img src="Imagenes/Slider/slider 1.jpg" alt="">
+            </li>
+            <li>
+                <img src="Imagenes/Slider/slider 2.jpg" alt="">
+            </li>
+            <li>
+                <img src="Imagenes/Slider/slider 3.jpg" alt="">
+            </li>
+            <li>
+                <img src="Imagenes/Slider/slider 4.jpg" alt="">
+            </li>
+        </ul>
+    </div>
+
+    
+        <div class="container-presentacion">
+            <p class="text-presentacion">Somos <span class="span-presentacion">Grupo Argentino De Espacios Verdes</span>, especialistas en diseño y mantenimiento de espacios verdes,un equipo formado
+                por paisajistas,diseñadores y jardineros con mas de 30 años de experiencia. Nuestro objetivo :<span class="span-presentacion"> dar vida a tus ideas.</span>
+            <p>
+        </div>
+    
+        <div class="services">
+            <div class="service-box">
+                <a href="#nosotros">
+                    <div class="box-content">
+                        <div class="boximg">
+                            <i class="fa-solid fa-users fa-2x"></i>
+                        </div>
+                        <div class="boxtext">
+                            <h2>Nosotros</h2>
+                            <p>Nuestro equipo de trabajo</p>
+                        </div>
+                    </div>
+                </a>
             </div>
 
-            <div class="contenido">
-                <div class="presentacion">
-                    <p>
-                        Somos un grupo de especialistas en diseño y mantenimiento de espacios verdes,un equipo formado
-                        por
-                        paisajistas,diseñadores y jardineros.
-                    <p>
-                </div>
-
-
-                <div class="services">
-                    <div class="service-box">
-                        <a href="#nosotros">
-                            <div class="box-content">
-                                <div class="boximg">
-                                    <i class="fa-solid fa-users fa-2x"></i>
-                                </div>
-                                <div class="boxtext">
-                                    <h2>Nosotros</h2>
-                                    <p>Nuestro equipo de trabajo</p>
-                                </div>
-                            </div>
-                        </a>
+            <div class="service-box">
+                <a href="#servicios">
+                    <div class="box-content">
+                        <div class="boximg">
+                            <i class="fa-solid fa-handshake-simple fa-2x"></i>
+                        </div>
+                        <div class="boxtext">
+                            <h2>Servicios</h2>
+                            <p>¿En que podemos ayudarte?</p>
+                        </div>
                     </div>
-
-                    <div class="service-box">
-                        <a href="#servicios">
-                            <div class="box-content">
-                                <div class="boximg">
-                                    <i class="fa-solid fa-handshake-simple fa-2x"></i>
-                                </div>
-                                <div class="boxtext">
-                                    <h2>Servicios</h2>
-                                    <p>¿En que podemos ayudarte?</p>
-                                </div>
-                            </div>
-                        </a>
+                </a>
+            </div>
+            <div class="service-box">
+                <a href="#proyectos">
+                    <div class="box-content">
+                        <div class="boximg">
+                            <i class="fa-solid fa-list-check fa-2x"></i>
+                        </div>
+                        <div class="boxtext">
+                            <h2>Proyectos</h2>
+                            <p>Trabajos en obra y finalizados</p>
+                        </div>
                     </div>
-                    <div class="service-box">
-                        <a href="#proyectos">
-                            <div class="box-content">
-                                <div class="boximg">
-                                    <i class="fa-solid fa-list-check fa-2x"></i>
-                                </div>
-                                <div class="boxtext">
-                                    <h2>Proyectos</h2>
-                                    <p>Trabajos en obra y finalizados</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-
-                </div>
+                </a>
             </div>
 
-                <div class="container-himage_index">
-                    <img src="imagenes/separador.png" class="img-separador2" alt="">
-                    <div class="text-himage_contacto">
-                        <p>Algunos paisajes son un enigma,otros, la explicacion.</p>
-                    </div>
-                </div>
-            
+        </div>
+    </div>
 
-            <div class="container-mid">
-                <div class="container-row1">
-                    <p>¿Por que <br> elegirnos?</p>
-                </div>
-                <div class="container-row2">
-                    <h2>Ofrecemos un servicio profesional y personalizado
-                        de la mejor calidad y a tu medida.</h2>
-                </div>
-                <div class="container-row3">
-                    <h4>Trabajamos para mejorar la calidad de vida de las personas
-                        en su entorno diario, creando espacios unicos.</h4>
-                </div>
+    <div class="container-himg">
+        <div class="text-himg">
+            <h2>Algunos paisajes son un enigma,otros, la explicacion.<h2>
+        </div>
+    </div>
 
-                <div class="container-col">
-                    <div class="container-button">
-                        <a href="contacto.html">
-                            <input type="button" value="CONTACTANOS" class="grid-button">
-                        </a>
-                    </div>
-                </div>
+
+    <div class="container-contacto">
+        <div class="container-text">
+            <div class="container-text_row">
+                <h2>¿Por que <br> elegirnos?<h2>
             </div>
+            <div class="container-text_row">
+                <p>Ofrecemos un servicio profesional y personalizado
+                    de la mejor calidad y a tu medida.<p>
+            </div>
+            <div class="container-text_row">
+                <p>Trabajamos para mejorar la calidad de vida de las personas
+                    en su entorno diario, creando espacios unicos.<p>
+            </div>
+        </div>
+        
+            <div class="container-button">
+                <a href="contacto.html">
+                    <input type="button" value="CONTACTANOS" class="grid-button">
+                </a>
+            </div>
+    </div>
 
 
-            <footer>
-                <div class="footer-container">
-                    <ul class="socials">
-                        <li> <a href="#"><i class="fa fa-facebook"></i></a></li>
-                        <li> <a href="#"><i class="fa fa-twitter"></i></a></li>
-                        <li> <a href="#"><i class="fa fa-linkedin"></i></a></li>
-                    </ul>
-                </div>
+    <footer>
+        <div class="footer-container">
+            <ul class="socials">
+                <li> <a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li> <a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li> <a href="#"><i class="fa fa-linkedin"></i></a></li>
+            </ul>
+        </div>
 
-                <div class="copy">
-                    <p>Copyright &copy;2022 GAEV SRL</p>
-                </div>
-            </footer>
-            <script src="/js/script.js"></script>
-            <script src="https://kit.fontawesome.com/8684dbcaf3.js" crossorigin="anonymous"></script>
-            <script src="https://kit.fontawesome.com/8684dbcaf3.js" crossorigin="anonymous"></script>
+        <div class="copy">
+            <p>Copyright &copy;2022 GAEV SRL</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/8684dbcaf3.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/8684dbcaf3.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
