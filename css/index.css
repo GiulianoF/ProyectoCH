@@ -39,66 +39,6 @@ font-size: 0.8rem;
   color:#ff8000 !important;
 }
 
-/* 
-.header {
-  min-width: 100%;
-  z-index: 1;
-  background-color:#fff;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  position: fixed;
-  top:0;
-}
-
-.header-left {
-  margin-left: 20px;
-}
-
-.header-right {
-  font-size: 13px;
-  font-weight: bold;
-}
-
-
-.nav {
-  margin-right: 30px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.nav-ul {
-  display: flex;
-  padding: 10px;
-}
-
-.nav-ul_li {
-  padding: 0 20px;
-}
-
-.nav-ul_li-a {
-  padding-bottom: 2px;
-  display: block;
-  color: black;
-  background-image: linear-gradient(#fff, orange);
-  background-position: 0% 100%;
-  background-repeat: no-repeat;
-  background-size: 0% 1px;
-  transition: all .3s;
-}
-
-a:hover,
-a:focus {
-  background-size: 100% 1px;
-}
-
-.nav-ul_li-a:hover {
-  transform:translateY(-2px);
-  transition: all 0.3s;
-  color: #ff8000;
-} */
-
 .slider {
   position: relative;
   max-width: 100%;
@@ -247,9 +187,6 @@ font-weight:bold;
 line-height: 1.4;
 }
 
-.container-text_row p{
-
-}
 .container-button{
   justify-content: center;
   align-items: center;
@@ -426,9 +363,6 @@ align-items: center;
 }
 
 
-
-
-
 /* ------------------------------------------------------------------------------NOSOTROS--------------------------------------------------------------------------- */
 
 .container-himage_nosotros {
@@ -456,10 +390,6 @@ align-items: center;
   display: flex;
   width: 100%;
 }
-
-
-
-
 
 .brief {
   padding: 40px;
@@ -514,10 +444,6 @@ align-items: center;
 
 
 
-
-
-
-
 /*-------------------------------------------------------------------------------PROYECTOS------------------------------------------------------------------------- */
 
 
@@ -548,42 +474,6 @@ align-items: center;
     grid-template-columns:1fr;
   }
 }
-
-
-
-
-
-
-/* container flex */
-/* 
-.container-proyectos {
-  margin: 100px 50px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  ;
-
-}
-
-.container-proyectos img {
-  object-fit: cover;
-  transition: 0.5s;
-  height: 200px;
-  width: 300px;
-  padding: 5px;
-  transition: .5s;
-
-}
-
-
-.container-proyectos img:hover {
-  cursor: pointer;
-  opacity: 0.5;
-}
-
-
- */
-
 
 /*-------------------------------------------------------------------------------SERVICIOS------------------------------------------------------------------------- */
 
